@@ -1,0 +1,24 @@
+.shop-category {
+    width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.shop-category h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.shop-category .shop-category-banner {
+    border-radius: 10px;
+    width: 1200px;
+    margin-top: 30px;
+}
+
+.shop-category-products {
+    margin: 50px 0;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+    justify-items: center;
+}

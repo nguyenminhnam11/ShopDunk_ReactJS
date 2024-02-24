@@ -1,0 +1,10 @@
+.breadcrum {
+    margin: 20px 0;
+    letter-spacing: 1px;
+    color: #515154;
+}
+
+.breadcrum i {
+    font-size: 14px;
+    margin: 0 2px;
+}

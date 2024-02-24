@@ -1,0 +1,38 @@
+.item {
+    width: 250px;
+    min-height: 350px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.04);
+    transition: 0.5s;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+}
+.item-image {
+    width: 230px;
+}
+
+.item-image img {
+    object-fit: cover; 
+}
+.item-name {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.item-price {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #0066CC;
+}
+
+.item:hover {
+    transform: scale(1.03);
+    box-shadow: 1px 1px 28px 0px rgb(0 0 0 / 12%);
+}

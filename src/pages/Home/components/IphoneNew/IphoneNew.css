@@ -1,0 +1,35 @@
+.iphoneNew {
+    max-width: 1200px;
+    margin: 20px auto;
+    height: auto;
+}
+
+.iphoneNew h1 {
+    text-align: center;
+}
+
+.iphoneNew-item {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+}
+.all > p {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px 15px;
+    border: 1px solid #0068D4;
+    border-radius: 8px;
+    color: #0068D4;
+    background: transparent;
+    transition: 0.4s;
+}
+
+.all > p:hover {
+    color: #FFF;
+    background: #0068D4;
+}
