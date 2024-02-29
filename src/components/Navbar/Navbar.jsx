@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './Navbar.css'
 
 import logo from '../../images/Logo_ShopDunk.png'
 import { Link } from 'react-router-dom';
+import { ShopContext } from '../../context/ShopContext';
 function Navbar(props) {
     const [ activeMenu, setActiveMenu ] = useState('')
+    const {getTotalItem} = useContext(ShopContext)
     return (
         <div className='navbar-container'>
             <div className='navbar-wrapper'>
@@ -22,7 +24,7 @@ function Navbar(props) {
                 </ul>
                 <div className='nav-actions'>
                     <p><i className='bx bx-search-alt-2'></i></p>
-                    <p><i className='bx bx-cart-alt'></i><span>0</span></p>
+                    <p><Link style={{textDecoration: 'none', color: '#D2CECB'}}to='/cart'><i className='bx bx-cart-alt'></i></Link><span>{getTotalItem()}</span></p>
                     <Link style={{textDecoration: 'none'}} to='/login'><p><i className='bx bx-user'></i></p></Link>
                 </div>
             </div>

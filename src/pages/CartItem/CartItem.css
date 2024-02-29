@@ -1,0 +1,100 @@
+.cartItem {
+   display: flex;
+   gap: 20px;
+   height: 100px;
+}
+
+.cartItem-table {
+    width: 70%;
+    background: #FFF;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.cartItem-table tr,th,td {
+    width: 100px;
+    padding: 20px;
+}
+
+.image-col img{
+    width: 70px;
+}
+
+.sidebar-cartItem {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 30%;
+    height: 400px;
+    background-color: #FFF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.voucher {
+    display: flex;
+    width: 100%;
+}
+
+.voucher input {
+    width: 60%;
+    padding: 15px;
+    border: 1px solid #EBEBEB;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.voucher button {
+    width: 39%;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 0px 10px 10px 0;
+    background: #AAAAAA;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.voucher button:hover {
+    background: #515154;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 10px;
+}
+
+.line-total {
+    margin: 0 auto;
+    width: 90%;
+    height: 1px;
+    background: black;
+    opacity: 0.3;
+}
+
+.rule {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 10px;
+}
+
+.btn-pay {
+    padding: 25px;
+    background: #0066CC;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.btn-pay:hover {
+    background: #197de1;
+}
+
+
+

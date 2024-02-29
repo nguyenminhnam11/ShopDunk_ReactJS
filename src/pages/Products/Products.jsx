@@ -11,7 +11,6 @@ function Products(props) {
 
   const product = all_products.find((e)=> e.id === Number(productId))
 
-  console.log('chekc data',product) 
   return (
     <div className="products-container">
       <Breadcrums product={product}/>
