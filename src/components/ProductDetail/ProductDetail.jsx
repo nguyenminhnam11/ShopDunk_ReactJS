@@ -3,7 +3,7 @@ import "./ProductDetail.css";
 import { ShopContext } from "../../context/ShopContext";
 
 function ProductDetail({ product }) {
-  const {addToCart} = useContext(ShopContext)
+  const { addToCart } = useContext(ShopContext);
 
   return (
     <div className="product-detail">
@@ -22,8 +22,19 @@ function ProductDetail({ product }) {
         </div>
         <div className="line"></div>
         <p className="product-price">{product.price}₫</p>
-        <button className="btn-addToCart" onClick={() => {addToCart(product.id)}}>Thêm vào giỏ hàng</button>
-      </div>  
+        <div className="line"></div>
+        <div className="btn-prod-detail">
+          <button
+            className="btn-addToCart"
+            onClick={() => {
+              addToCart(product.id);
+            }}
+          >
+            Thêm vào giỏ hàng
+          </button>
+          <button className="btn-addToCart">Mua ngay</button>
+        </div>
+      </div>
     </div>
   );
 }

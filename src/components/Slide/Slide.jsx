@@ -10,6 +10,7 @@ function Slide(props) {
     width: "100%",
     height: "auto",
     lineHeight: "160px",
+    marginTop: "64px"
   };
 
   return (

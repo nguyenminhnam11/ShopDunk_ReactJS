@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 
 
 function IphoneNew(props) {
+    const handleSrollTop = () => {
+        window.scroll(0,0)
+    }
   return (
     <div className="iphoneNew">
       <h1>iPhone</h1>
@@ -15,7 +18,7 @@ function IphoneNew(props) {
         ))}
       </div>
       <div className="all">
-        <Link to='/iphone'><p>Xem tất cả iphone</p></Link>
+        <Link to='/iphone' onClick={handleSrollTop}><p>Xem tất cả iphone</p></Link>
       </div>
     </div>
   );

@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 import bestMac from "../../../../Assets/bestMac";
 
 function MacNew(props) {
+    const handleSrollTop = () => {
+        window.scroll(0,0)
+    }
+
   return (
     <div className="MacNew">
       <h1>Mac</h1>
@@ -14,7 +18,7 @@ function MacNew(props) {
         ))}
       </div>
       <div className="all">
-        <Link to='/macbook'><p>Xem tất cả Mac</p></Link>
+        <Link to='/macbook' onClick ={handleSrollTop} ><p>Xem tất cả Mac</p></Link>
       </div>
     </div>
   );
